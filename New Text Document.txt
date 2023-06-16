@@ -1,0 +1,11 @@
+SMTP created.
+Copy and save your password. Once you close this window you will not be able to retrieve it
+Username
+karan@yopmail.com
+Password
+A5200D0DD146F750A98006523E2346216D3A
+Copy
+Server
+smtp.elasticemail.com
+Port
+2525

@@ -1,8 +1,10 @@
 import { AppBar, Toolbar, Box, InputBase, styled } from '@mui/material';
-import { Menu as MenuIcon, Tune, HelpOutlineOutlined, SettingsOutlined, 
-    AppsOutlined, AccountCircleOutlined, Search } from '@mui/icons-material'
-import {MAIL_LOGO} from '../constants/constant'
+import {
+    Menu as MenuIcon, Tune, HelpOutlineOutlined, SettingsOutlined,
+    AppsOutlined, AccountCircleOutlined, Search
+} from '@mui/icons-material'
 
+import logo from './logo.png';
 const StyledAppBar = styled(AppBar)`
     background: #f5F5F5;
     box-shadow: none;
@@ -36,15 +38,14 @@ const OptionsWrapper = styled(Box)`
 const Header = ({ toggleDrawer }) => {
 
     return (
-        <>
         <StyledAppBar position="static">
             <Toolbar>
                 <MenuIcon color="action" onClick={toggleDrawer} />
-                <img src={MAIL_LOGO} alt="logo" style={{ width: 40, marginLeft: 15 }} />
+                <img src={logo} alt="logo" style={{ width: 110, marginLeft: 15 }} />
                 <SearchWrapper>
                     <Search color="action" />
-                    <InputBase  />
-                    <Tune  color="action"/>
+                    <InputBase />
+                    <Tune color="action" />
                 </SearchWrapper>
 
                 <OptionsWrapper>
@@ -52,14 +53,10 @@ const Header = ({ toggleDrawer }) => {
                     <SettingsOutlined color="action" />
                     <AppsOutlined color="action" />
                     <AccountCircleOutlined color="action" />
-               </OptionsWrapper>
+                </OptionsWrapper>
             </Toolbar>
-            
         </StyledAppBar>
-        
-        </>
-        
     )
 }
 
-export default Header;
+export default Header;  
